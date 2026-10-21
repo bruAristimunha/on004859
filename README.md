@@ -24,6 +24,6 @@ EEGDash's positional renaming had given wrong labels to 1001 channels in 9 files
 
 ## Electrode locations (19 Oct 2026)
 
-Add coordsystem.json fsaverage/mm next to 9 electrodes.tsv (proposal A1, Lane G round 4). Evidence: Paper PMC11500755 (Methods): "we standardized each electrode location to the FreeSurfer standard coordinates, commonly referred to as FSaverage"; 7 of the 9 electrodes files are byte-identical to ds006234/on005545 (MNI-305) and 5 to on007118 (fsaverage / mm). fsaverage is a millimetre space by definition.
+Add coordsystem.json fsaverage/mm next to 9 electrodes.tsv. Evidence: Paper PMC11500755 (Methods): "we standardized each electrode location to the FreeSurfer standard coordinates, commonly referred to as FSaverage"; 7 of the 9 electrodes files are byte-identical to ds006234/on005545 (MNI-305) and 5 to on007118 (fsaverage / mm). fsaverage is a millimetre space by definition.
 
-The evidence for this change is stated in this section (the dataset's own files, the cited paper and the identical sibling deposits named above). This dataset mirrors OpenNeuro; the same change belongs upstream.
+Scope: these files declare the frame and units of the existing electrodes.tsv only; no coordinate value changed. This dataset mirrors OpenNeuro; the same change belongs upstream.
